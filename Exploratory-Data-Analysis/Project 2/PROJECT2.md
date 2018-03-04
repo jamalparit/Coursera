@@ -35,6 +35,7 @@ barplot(
 )
 dev.off()
 ```
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot1.png" alt="Exploratory Data Analysis Project 2 question 1" >
 
 ### Question 2
 
@@ -63,6 +64,7 @@ barplot(
 )
 dev.off()
 ```
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot2.png" alt="Exploratory Data Analysis Project 2 question 2" >
 
 ### Question 3
 Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
@@ -84,6 +86,7 @@ ggp <- ggplot(baltimoreNEI,aes(factor(year),Emissions,fill=type)) +
 print(ggp)
 dev.off()
 ```
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot3.png" alt="Exploratory Data Analysis Project 2 question 3" >
 
 ### Question 4
 Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
@@ -114,6 +117,7 @@ ggp <- ggplot(combustionNEI,aes(factor(year),Emissions/10^5)) +
 print(ggp)
 dev.off()
 ```
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot4.png" alt="Exploratory Data Analysis Project 2 question 4" >
 
 ### Question 5
 How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
@@ -144,7 +148,7 @@ ggp <- ggplot(baltimoreVehiclesNEI,aes(factor(year),Emissions)) +
 print(ggp)
 dev.off()
 ```
-
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot5.png" alt="Exploratory Data Analysis Project 2 question 5" >
 
 ### Question 6
 Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
@@ -172,3 +176,4 @@ ggp <- ggplot(bothNEI, aes(x=factor(year), y=Emissions, fill=city)) +
 print(ggp)
 dev.off()
 ```
+<img src="https://github.com/jamalparit/Coursera/blob/master/Exploratory-Data-Analysis/Project%202/plot6.png" alt="Exploratory Data Analysis Project 2 question 6" >
